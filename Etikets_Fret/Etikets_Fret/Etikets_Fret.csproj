@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{15565395-0E41-4D91-AC8F-07DCF231F895}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Etikets_Fret</RootNamespace>
+    <AssemblyName>Etikets_Fret</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>..\..\..\..\..\Desktop\CodeLabs\Mes Frameworks\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.Charts.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.DataAccess.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Printing.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v17.1.Export, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Sparkline.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v17.1.UI, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v17.1.Core, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v17.1, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v17.1.Extensions, Version=17.1.3.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\..\..\..\Desktop\CodeLabs\Mes Frameworks\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroFramework">
+      <HintPath>..\..\..\..\..\Desktop\CodeLabs\Mes Frameworks\MetroFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.QualityTools.Testing.Fakes, Version=12.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="PresentationFramework" />
+    <Reference Include="ReachFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="EtiForms\_Forms\frm_close_app.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_Forms\frm_close_app.Designer.cs">
+      <DependentUpon>frm_close_app.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_Forms\frm_login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_Forms\frm_login.Designer.cs">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_Forms\frm_principal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_Forms\frm_principal.Designer.cs">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_Splashes\splash_one.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_Splashes\splash_one.Designer.cs">
+      <DependentUpon>splash_one.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_attrribution_paiement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_attrribution_paiement.Designer.cs">
+      <DependentUpon>uc_attrribution_paiement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_categories.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_categories.Designer.cs">
+      <DependentUpon>uc_categories.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_etikets_fret.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_etikets_fret.Designer.cs">
+      <DependentUpon>uc_etikets_fret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_fret.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_fret.Designer.cs">
+      <DependentUpon>uc_fret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_navigateur.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_navigateur.Designer.cs">
+      <DependentUpon>uc_navigateur.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_paiement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_paiement.Designer.cs">
+      <DependentUpon>uc_paiement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_recuperation_fret.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_recuperation_fret.Designer.cs">
+      <DependentUpon>uc_recuperation_fret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_tarif.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\uc_tarif.Designer.cs">
+      <DependentUpon>uc_tarif.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\us_accueil_form.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EtiForms\_UserControls\us_accueil_form.Designer.cs">
+      <DependentUpon>us_accueil_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiReports\Print_ticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EtiReports\Print_ticket.Designer.cs">
+      <DependentUpon>Print_ticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EtiReports\XtraPrint_ticket_fret.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="EtiReports\XtraPrint_ticket_fret.Designer.cs">
+      <DependentUpon>XtraPrint_ticket_fret.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="EtiForms\_Forms\frm_close_app.resx">
+      <DependentUpon>frm_close_app.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_Forms\frm_login.resx">
+      <DependentUpon>frm_login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_Forms\frm_principal.resx">
+      <DependentUpon>frm_principal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_Splashes\splash_one.resx">
+      <DependentUpon>splash_one.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_UserControls\uc_attrribution_paiement.resx">
+      <DependentUpon>uc_attrribution_paiement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_UserControls\uc_categories.resx">
+      <DependentUpon>uc_categories.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_UserControls\uc_etikets_fret.resx">
+      <DependentUpon>uc_etikets_fret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_UserControls\uc_fret.resx">
+      <DependentUpon>uc_fret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_UserControls\uc_navigateur.resx">
+      <DependentUpon>uc_navigateur.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_UserControls\uc_paiement.resx">
+      <DependentUpon>uc_paiement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_UserControls\uc_recuperation_fret.resx">
+      <DependentUpon>uc_recuperation_fret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_UserControls\uc_tarif.resx">
+      <DependentUpon>uc_tarif.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiForms\_UserControls\us_accueil_form.resx">
+      <DependentUpon>us_accueil_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiReports\Print_ticket.resx">
+      <DependentUpon>Print_ticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EtiReports\XtraPrint_ticket_fret.resx">
+      <DependentUpon>XtraPrint_ticket_fret.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Fakes Include="Fakes\Partie_metier.fakes" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="EtiCodes\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cb-04.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etikets2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colis %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etikets1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etiketsxpress.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\etikets11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colis.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\high_quality_good-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\coin-money-6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon-tickets.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cinema_film_movie_ticket_entertainment_theater_coupon_circus-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paper-plane-3.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\startup-business-report-future-plan-strategy-statics-35170f0be257175c-512x512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\24_financial_analysis_report_card_reporting_valuation_analysis-512.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-256.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\JMV\Documents\Visual Studio 2015\Projects\Gestion_etikets_fret\Partie_metier\Partie_metier.csproj">
+      <Project>{1a2c4813-8a94-4316-8a95-39aa2979e955}</Project>
+      <Name>Partie_metier</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
